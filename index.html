@@ -133,16 +133,6 @@
         </div>
         <div class="product-card fade-up">
           <div class="card-top">
-            <div class="card-icon">⚙</div>
-            <h3>Nicotine Hardware</h3>
-          </div>
-          <div class="card-body">
-            <p>Devices, coils, batteries, chargers, and accessories.</p>
-            <a href="products.html" class="view-selection-link">View Selection &rarr;</a>
-          </div>
-        </div>
-        <div class="product-card fade-up">
-          <div class="card-top">
             <div class="card-icon">✿</div>
             <h3>Herbal Alternatives</h3>
           </div>
@@ -156,10 +146,20 @@
   </section>
 
 <section class="promo-drink-section" style="position: relative; overflow: hidden; min-height: 85vh;">
+  <style>
+@media (max-width: 600px) {
+  .promo-drink-section { min-height: auto !important; padding-bottom: 0 !important; }
+  .promo-drink-section #promoVideo { position: relative !important; top: auto !important; left: auto !important; transform: none !important; height: auto !important; width: 100% !important; }
+  #promoText { position: relative !important; top: auto !important; right: auto !important; left: auto !important; max-width: 100% !important; width: 100% !important; text-align: center !important; padding: 1.5rem 1.25rem 2rem !important; box-sizing: border-box; }
+  #promoText h2 { font-size: 1.8rem !important; line-height: 1.2 !important; }
+  #promoText p { font-size: 1rem !important; }
+  #promoBanner { position: relative !important; }
+}
+    </style>
       <video id="promoVideo" autoplay muted playsinline style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: 0; filter: brightness(0.65);">
         <source src="assets/caviar-drink-promo.mp4" type="video/mp4" />
       </video>
-      <div class="fade-up" style="position: absolute; top: 15%; right: 8%; z-index: 1; text-align: right; color: var(--white); max-width: 550px; padding: 2rem;">
+      <div class="fade-up" id="promoText" style="position: absolute; top: 15%; right: 8%; z-index: 1; text-align: right; color: var(--white); max-width: 550px; padding: 2rem;">
         <h2 style="font-size: 3.25rem; margin-bottom: 1.25rem; font-weight: 800; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.8);">A New Drink Everyone Is Loving</h2>
         <p style="font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">Experience the incredibly potent, fast-acting effects of Caviar's infused syrups. Sip it straight or mix it with your favorite beverage. Available in Lifted Strawberry Lemonade, Blue Razz Blast, and more.</p>
       </div>
