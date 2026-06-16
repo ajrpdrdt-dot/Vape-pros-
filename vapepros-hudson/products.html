@@ -4,49 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Browse our full selection of state approved vapes, cannabis, CBD, and herbal alternatives at Vape Pro's &amp; Dispensary in Hudson, WI." />
-  <title>Products | Vape Pro's &amp; Dispensary — Hudson, WI</title>
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Products — Vape Pro's &amp; Dispensary™</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="site-header" id="site-header">
-    <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="Vape Pros Home">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="36" height="36" rx="8" fill="#c0392b"/>
-          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="-0.5">VP</text>
-        </svg>
-        <span class="logo-text">Vape Pro's</span>
-      </a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="main-nav" id="main-nav" role="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html" class="active">Products</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="find-us.html">Find Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="age-modal" id="ageModal" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-card">
+      <img src="assets/logo.png" alt="Vape Pro's logo" />
+      <h2 id="ageTitle">You Must Be <span class="red">21+</span></h2>
+      <p>By entering this site, you confirm you are at least 21 years of age.</p>
+      <div class="age-buttons">
+        <button class="btn btn-red" id="ageYes">I Am 21+</button>
+        <button class="btn btn-outline" id="ageNo">I Am Under 21</button>
+      </div>
+      <div class="disclaimer-sm">Products sold are not for use by or sale to minors.</div>
     </div>
+  </div>
+  <div class="age-deny" id="ageDeny" role="dialog" aria-modal="true" aria-labelledby="ageDenyTitle">
+    <h2 id="ageDenyTitle">Sorry — You Must Be 21+ To Enter</h2>
+    <p>Thank you for visiting. Come back when you're of legal age.</p>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="Vape Pro's &amp; Dispensary logo" />
+        <span>Vape Pro's</span>
+      </a>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="find-us.html">Find Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="find-us.html" class="nav-cta">Visit Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="mainContent">
+
+  <header class="page-header">
+    <h1>Our Products</h1>
+    <p>Premium selection across our signature categories. Every product hand-picked for quality.</p>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <h1 class="fade-up">Our Products</h1>
-      <p class="fade-up">Everything we carry — state approved, compliant, and curated for Hudson.</p>
-    </div>
-  </section>
-
-  <!-- PRODUCTS GRID -->
-  <section class="products-section section-pad">
+  <section>
     <div class="container">
       <div class="product-grid">
 
@@ -54,15 +64,11 @@
           <div class="card-top">
             <div class="card-icon">⌬</div>
             <h3>State Approved Vapes</h3>
-            <span style="display:inline-block;margin-top:8px;padding:4px 12px;background:#0f7a2e;color:#fff;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;border-radius:999px;text-transform:uppercase;">&#10003; State Approved</span>
           </div>
           <div class="card-body">
-            <p>Caviar THCP disposables — premium cannabis oil &amp; terpenes, under 0.3% THC, lab certified. 3g each.</p>
+            <p>State approved disposable vapes only — compliant brands, lab tested, sold legally in Wisconsin.</p>
             <ul>
-              <li>Cherry Paloma — <em>Sativa</em></li>
-              <li>Garlatti — <em>Sativa</em></li>
-              <li>Animal Mintz — <em>Indica</em></li>
-              <li>Hubba Bubba Runtz — <em>Hybrid</em></li>
+              <li>Disposable vapes — state approved only</li>
             </ul>
           </div>
         </div>
@@ -108,35 +114,391 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo footer-logo" aria-label="Vape Pros Home">
-          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-            <rect width="36" height="36" rx="8" fill="#c0392b"/>
-            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="-0.5">VP</text>
-          </svg>
-          <span class="logo-text">Vape Pro's</span>
-        </a>
-        <p class="footer-tagline">Hudson's vape &amp; dispensary — open daily 8AM–11PM.</p>
+  
+  <section class="caviar-section">
+    <div class="container">
+      <div class="caviar-header fade-up">
+        <h2>Featured Caviar Collection</h2>
+        <p>Explore our premium selection of Caviar products, from potent disposables to perfectly crafted pre-rolls.</p>
       </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="find-us.html">Find Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="footer-contact">
-        <p><a href="tel:+17153811811">(715) 381-1811</a></p>
-        <p>2530 Crest View Dr, Hudson WI 54016</p>
+      <div class="catalog-layout">
+        <aside class="catalog-sidebar">
+          <h3>Categories</h3>
+          <ul class="catalog-filters">
+            <li><button class="catalog-filter-btn active" data-filter="all">All Products</button></li>
+            <li><button class="catalog-filter-btn" data-filter="vapes">Vapes & Cartridges</button></li>
+            <li><button class="catalog-filter-btn" data-filter="flower">Pre-Rolls & Blunts</button></li>
+            <li><button class="catalog-filter-btn" data-filter="edibles">Edibles & Gummies</button></li>
+            <li><button class="catalog-filter-btn" data-filter="drinks">Syrups & Drinks</button></li>
+          </ul>
+        </aside>
+        <main class="catalog-main">
+          <div class="caviar-grid">
+
+            <div class="caviar-card fade-up" data-category="drinks">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/81/image_1024/Caviar%20Drinks%20Lifted%20Strawberry%20Lemonade%204pk?unique=d08e357" alt="Caviar Drinks Lifted Strawberry Lemonade 4pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Caviar Drinks Lifted Strawberry Lemonade 4pk</h3>
+                <p>Fast-acting, incredibly potent infused syrup to elevate your day with incredible flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="drinks">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/82/image_1024/Caviar%20Drinks%20Blue%20Razz%20Blast%204pk?unique=c505ad2" alt="Caviar Drinks Blue Razz Blast 4pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Caviar Drinks Blue Razz Blast 4pk</h3>
+                <p>Fast-acting, incredibly potent infused syrup to elevate your day with incredible flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="drinks">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/83/image_1024/Caviar%20Drinks%20Tropical%20Mango%20Passionfruit%204pk?unique=917d3eb" alt="Caviar Drinks Tropical Mango Passionfruit 4pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Caviar Drinks Tropical Mango Passionfruit 4pk</h3>
+                <p>Fast-acting, incredibly potent infused syrup to elevate your day with incredible flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="drinks">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/84/image_1024/Caviar%20Drinks%20Fruit%20Sucker%20Punch%204pk?unique=750e1a9" alt="Caviar Drinks Fruit Sucker Punch 4pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Caviar Drinks Fruit Sucker Punch 4pk</h3>
+                <p>Fast-acting, incredibly potent infused syrup to elevate your day with incredible flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/85/image_1024/HPH%202pk%20Pre%20Rolls%20ACDC?unique=374ec84" alt="HPH 2pk Pre Rolls ACDC" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls ACDC</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/87/image_1024/HPH%202pk%20Pre%20Rolls%20ATF?unique=675264b" alt="HPH 2pk Pre Rolls ATF" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls ATF</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/88/image_1024/HPH%202pk%20Pre%20Rolls%20Blue%20Dream?unique=381c42e" alt="HPH 2pk Pre Rolls Blue Dream" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls Blue Dream</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/89/image_1024/HPH%202pk%20Pre%20Rolls%20Headband?unique=ce16955" alt="HPH 2pk Pre Rolls Headband" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls Headband</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/90/image_1024/HPH%202pk%20Pre%20Rolls%20Platinum%20OG?unique=2c8e622" alt="HPH 2pk Pre Rolls Platinum OG" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls Platinum OG</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/91/image_1024/HPH%202pk%20Pre%20Rolls%20Skywalker?unique=87e0646" alt="HPH 2pk Pre Rolls Skywalker" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 2pk Pre Rolls Skywalker</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$14.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/93/image_1024/HPH%2014pk%20Pre%20Rolls%20ACDC?unique=286ace6" alt="HPH 14pk Pre Rolls ACDC" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls ACDC</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/94/image_1024/HPH%2014pk%20Pre%20Rolls%20ATF?unique=30eb28a" alt="HPH 14pk Pre Rolls ATF" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls ATF</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/95/image_1024/HPH%2014pk%20Pre%20Rolls%20Blue%20Dream?unique=6992d5f" alt="HPH 14pk Pre Rolls Blue Dream" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls Blue Dream</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/96/image_1024/HPH%2014pk%20Pre%20Rolls%20Headband?unique=f212983" alt="HPH 14pk Pre Rolls Headband" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls Headband</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/97/image_1024/HPH%2014pk%20Pre%20Rolls%20Platinum%20OG?unique=7c451b3" alt="HPH 14pk Pre Rolls Platinum OG" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls Platinum OG</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="flower">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/98/image_1024/HPH%2014pk%20Pre%20Rolls%20Skywalker?unique=0189fd2" alt="HPH 14pk Pre Rolls Skywalker" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH 14pk Pre Rolls Skywalker</h3>
+                <p>Meticulously crafted pre-rolls and blunts packed with premium flower for a smooth session.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$49.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/99/image_1024/HPH%20Disposable%203.5grams%20Pink%20Panties?unique=77d5fcb" alt="HPH Disposable 3.5grams Pink Panties" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Disposable 3.5grams Pink Panties</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/100/image_1024/HPH%20Disposable%203.5grams%20AK47?unique=d2477f2" alt="HPH Disposable 3.5grams AK47" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Disposable 3.5grams AK47</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/101/image_1024/HPH%20Disposable%203.5grams%20Platinum%20OG?unique=ea1f2db" alt="HPH Disposable 3.5grams Platinum OG" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Disposable 3.5grams Platinum OG</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/102/image_1024/HPH%20Disposable%203.5grams%20ATF?unique=262f116" alt="HPH Disposable 3.5grams ATF" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Disposable 3.5grams ATF</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$19.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/103/image_1024/HPH%20Cartridge%202grams%20Pink%20Panties%20?unique=daab714" alt="HPH Cartridge 2grams Pink Panties" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Cartridge 2grams Pink Panties</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$34.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/104/image_1024/HPH%20Cartridge%202grams%20AK47?unique=30691d5" alt="HPH Cartridge 2grams AK47" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Cartridge 2grams AK47</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$34.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/105/image_1024/HPH%20Cartridge%202grams%20Platinum%20OG%20?unique=043a7e9" alt="HPH Cartridge 2grams Platinum OG" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Cartridge 2grams Platinum OG</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$34.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="vapes">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/106/image_1024/HPH%20Cartridge%202grams%20ATF%20?unique=ab0604e" alt="HPH Cartridge 2grams ATF" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>HPH Cartridge 2grams ATF</h3>
+                <p>Premium hardware loaded with high-quality extract for massive clouds and exceptional flavor.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$34.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="edibles">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/107/image_1024/Gam%20Gam%27s%20Low%20Dose%20Edibles%20Assorted%20Flavors%2010pk?unique=b8711b0" alt="Gam Gam's Low Dose Edibles Assorted Flavors 10pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Gam Gam's Low Dose Edibles Assorted Flavors 10pk</h3>
+                <p>Delicious, precisely dosed edibles formulated to deliver consistent, heavy-hitting effects.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$18.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="edibles">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/108/image_1024/Gam%20Gam%27s%20Low%20Dose%20Edibles%20Blue%20Raspberry%2010pk?unique=c6d6813" alt="Gam Gam's Low Dose Edibles Blue Raspberry 10pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Gam Gam's Low Dose Edibles Blue Raspberry 10pk</h3>
+                <p>Delicious, precisely dosed edibles formulated to deliver consistent, heavy-hitting effects.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$18.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+            <div class="caviar-card fade-up" data-category="edibles">
+              <div class="caviar-img-wrap">
+                <img src="https://www.caviarproducts.com/web/image/product.product/109/image_1024/Gam%20Gam%27s%20Low%20Dose%20Edibles%20Grape%2010pk?unique=29d3095" alt="Gam Gam's Low Dose Edibles Grape 10pk" loading="lazy">
+              </div>
+              <div class="caviar-card-body">
+                <h3>Gam Gam's Low Dose Edibles Grape 10pk</h3>
+                <p>Delicious, precisely dosed edibles formulated to deliver consistent, heavy-hitting effects.</p>
+                <div class="caviar-card-footer">
+                  <span class="caviar-price">$18.99</span>
+                  <a href="find-us.html" class="btn btn-red" style="padding:0.4rem 1rem;font-size:0.85rem;">Buy In Store</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Vape Pro's &amp; Dispensary. All rights reserved.</p>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Vape Pro's &amp; Dispensary™</p>
+      <p>2530 Crest View Dr, Hudson WI 54016 &nbsp;|&nbsp; <a href="tel:+17153811811">(715) 381-1811</a></p>
       <p class="footer-age">Must be 21+ to purchase. Products not evaluated by the FDA.</p>
     </div>
   </footer>
