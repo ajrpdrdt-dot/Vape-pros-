@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vape Pro's & Dispensary — Hudson Wisconsin's premier vape and cannabis dispensary. Premium vapes, e-liquids, CBD, hemp-derived cannabis, and more. Open daily 8AM–11PM." />
-  <meta name="theme-color" content="#0a0a0a" />
-  <title>Vape Pro's &amp; Dispensary™ — Hudson's Premier Vape &amp; Dispensary</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vape Pro's & Dispensary | Hudson, WI</title>
+    <meta name="description" content="Vape Pro's & Dispensary — Hudson Wisconsin's premier vape and cannabis dispensary. State approved disposable vapes, CBD, hemp-derived cannabis, and more. Open daily 8AM–11PM." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
 
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2" />
-</head>
-<body>
-
-  <!-- ===== Age Verification ===== -->
-  <div class="age-modal" id="ageModal" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
-    <div class="age-card">
-      <img src="assets/logo.png" alt="Vape Pro's &amp; Dispensary logo" />
-      <h2 id="ageTitle">You Must Be <span class="red">21+</span></h2>
-      <p>By entering this site, you confirm you are at least 21 years of age and legally allowed to view content related to vape and cannabis products in your jurisdiction.</p>
-      <div class="age-buttons">
-        <button class="btn btn-red" id="ageYes">I Am 21+</button>
-        <button class="btn btn-outline" id="ageNo">I Am Under 21</button>
+    <!-- ===================== NAV ===================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo" aria-label="Vape Pros Home">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="#c0392b"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="-0.5">VP</text>
+          </svg>
+          <span class="logo-text">Vape Pro's</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" role="navigation">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="find-us.html">Find Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="disclaimer-sm">Vape Pro's &amp; Dispensary™ — Hudson, WI. Products sold are not for use by or sale to minors.</div>
-    </div>
-  </div>
-  <div class="age-deny" id="ageDeny" role="dialog" aria-modal="true" aria-labelledby="ageDenyTitle">
-    <h2 id="ageDenyTitle">Sorry — You Must Be 21+ To Enter</h2>
-    <p>Thank you for visiting. Come back when you're of legal age.</p>
-  </div>
+    </header>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <img src="assets/logo.png" alt="Vape Pro's logo" />
-      </a>
-      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="primary-nav">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html" class="nav-cta">Visit Us</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main id="mainContent">
-
-  <!-- ===== Hero ===== -->
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/logo.png">
-      <source src="assets/hero-new.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img class="hero-logo" src="assets/logo.png" alt="Vape Pro's & Dispensary" />
-      <p class="tagline">Hudson's <strong>Premier</strong> Vape &amp; Dispensary</p>
-      <div class="hero-cta-row">
-        <a href="find-us.html" class="btn btn-red">Visit Us Today</a>
-        <a href="products.html" class="btn btn-outline">Browse Products</a>
-      </div>
-    </div>
-    <div class="scroll-cue">Scroll ↓</div>
-  </section>
-
-  <!-- ===== Highlights ===== -->
-  <section class="highlights">
-    <div class="container">
-      <div class="highlights-grid">
-        <div class="highlight-item fade-up">
-          <div class="icon">★</div>
-          <h3>Premium Selection</h3>
-          <p>Top brands in vape, cannabis, CBD, and hardware.</p>
-        </div>
-        <div class="highlight-item fade-up">
-          <div class="icon">●</div>
-          <h3>Open Daily 8AM – 11PM</h3>
-          <p>Seven days a week, every week.</p>
-        </div>
-        <div class="highlight-item fade-up">
-          <div class="icon">♥</div>
-          <h3>Pet Friendly</h3>
-          <p>Bring your best friend along.</p>
-        </div>
-        <div class="highlight-item fade-up">
-          <div class="icon">✓</div>
-          <h3>21+ Verified</h3>
-          <p>Always compliant, always discreet.</p>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge fade-up">Hudson, WI · Open Daily 8AM–11PM</div>
+        <h1 class="fade-up">Hudson's Vape &amp; Dispensary.</h1>
+        <p class="hero-sub fade-up">State approved vapes, hemp-derived cannabis, CBD, herbal alternatives &amp; more — all in one spot on the south end of Hudson.</p>
+        <div class="hero-actions fade-up">
+          <a href="products.html" class="btn btn-red">Browse Products</a>
+          <a href="find-us.html" class="btn btn-ghost">Get Directions</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== Categories preview ===== -->
-  <section class="what-we-carry-section" style="position: relative; overflow: hidden; padding: 5rem 0;">
-      <!-- Subtle background glows -->
-      <div class="glow-accent" style="position: absolute; top: -10%; left: -10%; width: 40%; height: 60%; background: var(--red); opacity: 0.03; filter: blur(100px); border-radius: 50%; pointer-events: none;"></div>
-      <div class="glow-accent" style="position: absolute; bottom: -10%; right: -10%; width: 50%; height: 70%; background: var(--black); opacity: 0.02; filter: blur(120px); border-radius: 50%; pointer-events: none;"></div>
-    <div class="container">
-      <div class="section-title fade-up">
+    <!-- ===================== HOURS TICKER ===================== -->
+    <div class="hours-bar">
+      <div class="hours-inner">
+        <span class="hours-item"><strong>Monday–Sunday</strong>&ensp;8:00 AM – 11:00 PM</span>
+        <span class="hours-dot" aria-hidden="true">·</span>
+        <span class="hours-item"><strong>Phone:</strong>&ensp;<a href="tel:+17153811811">(715) 381-1811</a></span>
+        <span class="hours-dot" aria-hidden="true">·</span>
+        <span class="hours-item"><strong>Location:</strong>&ensp;2530 Crest View Dr, Hudson WI 54016</span>
+      </div>
+    </div>
+
+    <!-- ===================== WHAT WE CARRY ===================== -->
+    <section class="products-overview section-pad">
+      <div class="container">
+        <div class="section-header fade-up">
         <h2>What We Carry</h2>
         <p>Hand-curated products from the most trusted brands in the industry.</p>
       </div>
@@ -114,10 +73,10 @@
         <div class="product-card fade-up">
           <div class="card-top">
             <div class="card-icon">⌬</div>
-            <h3>Vapes &amp; E-Liquids</h3>
+            <h3>State Approved Vapes</h3>
           </div>
           <div class="card-body">
-            <p>Disposables, mods, pods, and a wall of premium e-liquid flavors.</p>
+            <p>State approved disposable vapes — compliant brands only.</p>
             <a href="products.html" class="view-selection-link">View Selection &rarr;</a>
           </div>
         </div>
@@ -128,16 +87,6 @@
           </div>
           <div class="card-body">
             <p>Hemp-derived flower, edibles, tinctures, and full-spectrum CBD.</p>
-            <a href="products.html" class="view-selection-link">View Selection &rarr;</a>
-          </div>
-        </div>
-        <div class="product-card fade-up">
-          <div class="card-top">
-            <div class="card-icon">⚙</div>
-            <h3>Nicotine Hardware</h3>
-          </div>
-          <div class="card-body">
-            <p>Devices, coils, batteries, chargers, and accessories.</p>
             <a href="products.html" class="view-selection-link">View Selection &rarr;</a>
           </div>
         </div>
@@ -158,92 +107,95 @@
 <section class="promo-drink-section" style="position: relative; overflow: hidden; min-height: 85vh;">
       <video id="promoVideo" autoplay muted playsinline style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: 0; filter: brightness(0.65);">
         <source src="assets/caviar-drink-promo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
-      <div class="fade-up" style="position: absolute; top: 15%; right: 8%; z-index: 1; text-align: right; color: var(--white); max-width: 550px; padding: 2rem;">
-        <h2 style="font-size: 3.25rem; margin-bottom: 1.25rem; font-weight: 800; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.8);">A New Drink Everyone Is Loving</h2>
-        <p style="font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">Experience the incredibly potent, fast-acting effects of Caviar's infused syrups. Sip it straight or mix it with your favorite beverage. Available in Lifted Strawberry Lemonade, Blue Razz Blast, and more.</p>
-      </div>
-      <div id="promoBanner" style="position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); border-top: 1px solid rgba(255,255,255,0.1); padding: 1.5rem 0; text-align: center; z-index: 2; opacity: 0; pointer-events: none; transition: opacity 1s ease;">
-        <button class="btn btn-red" style="font-weight: bold; padding: 0.85rem 3.5rem; font-size: 1.15rem; box-shadow: 0 4px 20px rgba(224,40,40,0.6);" onclick="window.location.href='products.html'">Shop Caviar Drinks</button>
+      <div style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 85vh; padding: 2rem; text-align: center; color: #fff;">
+        <p style="font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.75); margin-bottom: 0.75rem;">Now Available</p>
+        <h2 style="font-size: clamp(2rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1rem; font-family: 'Montserrat', sans-serif;">Caviar THC Drinks</h2>
+        <p style="font-size: clamp(1rem, 2vw, 1.3rem); max-width: 540px; color: rgba(255,255,255,0.88); margin-bottom: 2rem;">Refreshing, precisely dosed hemp-derived THC beverages. Perfect for any occasion — now in stock at Vape Pro's.</p>
+        <a href="products.html" class="btn btn-red" style="font-size: 1rem; padding: 0.9rem 2rem;">Shop Caviar Drinks</a>
       </div>
     </section>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var vid = document.getElementById('promoVideo');
-        var banner = document.getElementById('promoBanner');
-        if(vid && banner) {
-          vid.addEventListener('ended', function() {
-            banner.style.opacity = '1';
-            banner.style.pointerEvents = 'auto';
-            vid.play(); // manually restart video to keep looping
-          });
-        }
-      });
-    </script>
 
-<section class="locator-section fade-up" style="background: var(--black); color: var(--white); padding: 4rem 0; text-align: center;">
-    <div class="container">
-      <h2 style="margin-bottom: 1rem;">Find Caviar Near You</h2>
-      <p style="color: var(--gray-300); max-width: 600px; margin: 0 auto 2rem;">Looking for a retailer in your area that carries our premium Caviar THCA products? Use the official store locator below.</p>
-      <div class="iframe-wrapper" style="width: 100%; height: 600px; border-radius: 12px; overflow: hidden; border: 2px solid #333;">
-        <iframe src="https://www.caviarproducts.com/store-locator" width="100%" height="100%" style="border:none;" loading="lazy"></iframe>
+    <!-- ===================== WHY US ===================== -->
+    <section class="why-us section-pad">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Why Vape Pro's?</h2>
+          <p>We're not just a shop. We're your neighbors.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card fade-up">
+            <div class="why-icon" aria-hidden="true">✔</div>
+            <h3>Compliant & Trustworthy</h3>
+            <p>Every product meets state and federal standards. No gray-market stuff — ever.</p>
+          </div>
+          <div class="why-card fade-up">
+            <div class="why-icon" aria-hidden="true">⏰</div>
+            <h3>Open Late, Every Day</h3>
+            <p>8 AM to 11 PM, 365 days a year. Because your schedule doesn't stop on weekends.</p>
+          </div>
+          <div class="why-card fade-up">
+            <div class="why-icon" aria-hidden="true">★</div>
+            <h3>Expert Staff</h3>
+            <p>Our team knows every product on the shelf. Ask us anything — we'll find the right fit.</p>
+          </div>
+          <div class="why-card fade-up">
+            <div class="why-icon" aria-hidden="true">⬡</div>
+            <h3>Local & Community-First</h3>
+            <p>Locally owned and operated in Hudson. We invest in this community because we live here too.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CTA strip ===== -->
-  <section style="background:var(--black); color:var(--white); padding:4rem 0; text-align:center;">
-    <div class="container">
-      <h2 style="margin-bottom:1rem;">Come See Us In Hudson</h2>
-      <p style="color:var(--gray-300); max-width:600px; margin:0 auto 2rem;">
-        1801 Ward Ave Suite 214 · Hudson, WI · Open 8AM–11PM Daily
-      </p>
-      <a href="find-us.html" class="btn btn-red">Get Directions</a>
-    </div>
-  </section>
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="cta-banner">
+      <div class="container cta-inner fade-up">
+        <div class="cta-text">
+          <h2>Come See Us Today</h2>
+          <p>Stop in, say hi, and find exactly what you're looking for.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="find-us.html" class="btn btn-white">Get Directions</a>
+          <a href="contact.html" class="btn btn-ghost-light">Contact Us</a>
+        </div>
+      </div>
+    </section>
 
-  </main>
-
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="Vape Pro's logo" />
-          <h4>Vape Pro's &amp; Dispensary™</h4>
-          <p>Hudson's premier vape &amp; dispensary. Premium quality. Honest prices.</p>
+          <a href="index.html" class="logo footer-logo" aria-label="Vape Pros Home">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="#c0392b"/>
+              <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="-0.5">VP</text>
+            </svg>
+            <span class="logo-text">Vape Pro's</span>
+          </a>
+          <p class="footer-tagline">Hudson's vape &amp; dispensary — open daily 8AM–11PM.</p>
         </div>
-        <div>
-          <h4>Hours</h4>
+        <nav class="footer-nav" aria-label="Footer navigation">
           <ul>
-            <li><span class="lbl">Mon – Sun</span><br/>8:00 AM – 11:00 PM</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Visit</h4>
-          <ul>
-            <li>1801 Ward Ave</li>
-            <li>Suite 214</li>
-            <li>Hudson, WI</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Links</h4>
-          <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="find-us.html">Find Us</a></li>
             <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="find-us.html">Find Us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+        </nav>
+        <div class="footer-contact">
+          <p><a href="tel:+17153811811">(715) 381-1811</a></p>
+          <p>2530 Crest View Dr, Hudson WI 54016</p>
         </div>
       </div>
       <div class="footer-bottom">
-        © <span id="year"></span> Vape Pro's &amp; Dispensary™. All rights reserved.
-        <div class="disclaimer">Must be 21+ to purchase. These products are not intended to diagnose, treat, cure or prevent any disease. Keep out of reach of children and pets.</div>
+        <p>&copy; 2025 Vape Pro's &amp; Dispensary. All rights reserved.</p>
+        <p class="footer-age">Must be 21+ to purchase. Products not evaluated by the FDA.</p>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
